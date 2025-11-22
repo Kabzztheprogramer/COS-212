@@ -1,0 +1,143 @@
+ === PHASE 1: City/District Setup ===
+==== METACITY SYSTEM OVERVIEW ====
+
+---- METACITY: Gotham ----
+Districts:
+  0: Downtown
+  1: Uptown
+  2: Industrial Zone
+
+POWER Network:
+      0   1   2
+    ------------
+ 0 |   0   0   0
+ 1 |   0   0   0
+ 2 |   0   0   0
+
+  Connections:
+    No connections
+
+WATER Network:
+      0   1   2
+    ------------
+ 0 |   0   0   0
+ 1 |   0   0   0
+ 2 |   0   0   0
+
+  Connections:
+    No connections
+
+TRANSPORTATION Network:
+      0   1   2
+    ------------
+ 0 |   0   0   0
+ 1 |   0   0   0
+ 2 |   0   0   0
+
+  Connections:
+    No connections
+
+---- METACITY: Metropolis ----
+Districts:
+  0: Business District
+  1: Residential Sector
+
+POWER Network:
+      0   1
+    --------
+ 0 |   0   0
+ 1 |   0   0
+
+  Connections:
+    No connections
+
+WATER Network:
+      0   1
+    --------
+ 0 |   0   0
+ 1 |   0   0
+
+  Connections:
+    No connections
+
+TRANSPORTATION Network:
+      0   1
+    --------
+ 0 |   0   0
+ 1 |   0   0
+
+  Connections:
+    No connections
+
+==== INTERCITY CONNECTIONS ====
+No intercity connections
+
+
+=== PHASE 2: Intra-City Connections ===
+Intra-city networks created:
+---- METACITY: Gotham ----
+Districts:
+  0: Downtown
+  1: Uptown
+  2: Industrial Zone
+
+POWER Network:
+      0   1   2
+    ------------
+ 0 |   0  50   0
+ 1 |  50   0  30
+ 2 |   0  30   0
+
+  Connections:
+    District 0 <--> District 1 (Weight: 50)
+    District 1 <--> District 2 (Weight: 30)
+
+WATER Network:
+      0   1   2
+    ------------
+ 0 |   0   0   0
+ 1 |   0   0   0
+ 2 |   0   0   0
+
+  Connections:
+    No connections
+
+TRANSPORTATION Network:
+      0   1   2
+    ------------
+ 0 |   0  15   0
+ 1 |   0   0  10
+ 2 |   0   0   0
+
+  Connections:
+ District 0 --> District 1 (Weight: 15)
+ District 1 --> District 2 (Weight: 10)
+
+
+=== PHASE 3: Inter-City Connections ===
+Inter-city connections:
+Gotham (Industrial Zone) ---> Metropolis (Business District) [Weight: 75]
+Metropolis (Business District) ---> Gotham (Industrial Zone) [Weight: 75]
+
+
+=== PHASE 4: Power Grid Analysis ===
+Is power grid fully connected? NO
+Unreachable districts:
+
+Unreachable districts:
+- Metropolis:Residential Sector
+
+
+=== PHASE 5: Advanced Tests ===
+DFS with blocked districts:
+Visiting: Downtown
+
+Shortest path times from Gotham Downtown:
+Downtown            : 0 minutes
+Uptown              : 15 minutes
+Industrial Zone     : 25 minutes
+
+Intercity coloring:
+=== Final Coloring ===
+Gotham      : Red    (DSATUR=0, Uncolored=1)
+Metropolis  : Green  (DSATUR=1, Uncolored=0)

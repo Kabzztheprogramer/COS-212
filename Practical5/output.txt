@@ -1,0 +1,11 @@
+========== HASH MAP STRUCTURE ==========
+Bucket[0]: [ 5555-6666-7777:Patient E ]
+Bucket[1]: [ empty ]
+Bucket[2]: [ empty ]
+Bucket[3]: [ empty ]
+Bucket[4]: [ 2468-1357-9024:Patient B ]
+Bucket[5]: [ 9876-5432-1098:Patient C ] --> [ 1111-2222-3333:Patient D ]       
+Bucket[6]: [ empty ]
+Bucket[7]: [ empty ]
+Bucket[8]: [ 1234-5678-9012:Patient A ]
+Bucket[9]: [ empty ]

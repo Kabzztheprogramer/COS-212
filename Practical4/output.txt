@@ -1,0 +1,20 @@
+10True{B[Reece Jordaan]{R[Werner Haugher]{B[Lucas Blanc]{R[Tinashe Austin]{}{}}{R[Anna Bosman]{}{}}}{B[Caelen Hill]{}{}}}{R[Aidan McKenzie]{B[Sean Macmillan]{}{}}{B[Stefan Muller]{}{R[James Neale]{}{}}}}}
+│           ┌── R[James Neale]
+│       ┌── B[Stefan Muller]
+│   ┌── R[Aidan McKenzie]
+│   │   └── B[Sean Macmillan]
+└── B[Reece Jordaan]
+    │   ┌── B[Caelen Hill]
+    └── R[Werner Haugher]
+        │   ┌── R[Anna Bosman]
+        └── B[Lucas Blanc]
+            └── R[Tinashe Austin]
+
+6True{B[Reece Jordaan]{B[Lucas Blanc]{}{R[Caelen Hill]{}{}}}{R[Stefan Muller]{B[Aidan McKenzie]{}{}}{B[James Neale]{}{}}}}
+│       ┌── B[James Neale]
+│   ┌── R[Stefan Muller]
+│   │   └── B[Aidan McKenzie]
+└── B[Reece Jordaan]
+    │   ┌── R[Caelen Hill]
+    └── B[Lucas Blanc]
+
